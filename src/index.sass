@@ -1,5 +1,5 @@
 @use "sass:map"
-$theme-colors: ("first": white, "second": #222831, "thrid":#f5f5f5ee)
+$theme-colors: ("first": black, "second": white, "thrid":#f5f5f5ee)
 @mixin text
     color: map-get($theme-colors, "second")
     font-family: Kumbh Sans
@@ -15,50 +15,20 @@ body
     margin-top: -5vw
 
 .parent-box
-    display: flex
-    align-items: center
-    justify-content: center
     width: 80vw
     padding: 7vw
-    height: 30vw
-    border-radius: 10px
+    height: 20vw
     margin: auto
-    background: map-get($theme-colors, "thrid")
+    background: map-get($theme-colors, "first")
+    border: 1px solid white
+    display: flex
 
 .content-box
-    background: map-get($theme-colors, "first")
-    padding: 5vw
-    width: 65vw
-    height: 28vw
-    border-radius: 10px
-    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
-
-form
-    input
-        outline: none
-        background: map-get($theme-colors, "first")
-        border-bottom-color: map-get($theme-colors, "second")
-        border-right: none
-        border-left: none
-        border-top: none
-        color: map-get($theme-colors, "second")
-        justify-content: center
-        margin: auto
-        display: block
-
-    button
-        border: none
-        padding: 2px
-        width: 50px
-        background: map-get($theme-colors, "second")
-        border-radius: 5px
-        margin: auto
-        display: block
-        color: map-get($theme-colors, "first")
-
-ul
-    color: map-get($theme-colors, "second")
-    text-align: left
+    margin: auto
+    width: 15vw
+    height: 20vw
+    background: map-get($theme-colors, "second")
+    border-radius: 5px
 
 .info-text
     @include text
